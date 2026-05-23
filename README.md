@@ -90,7 +90,7 @@ If the site is accessible but GitHub still displays an error:
   - Create a new form and get your form ID
   - Replace `YOUR_FORMSPREE_ID` in `MeshCon.html` (Contact Modal form action)
   - Test email submissions in contact modal
-- [ ] **Add Google Site Verification:** Update `google-site-verification` meta tag
+- [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
 - [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
 - [ ] **Ensure `og-image.jpg` is present** for social media link previews (1200 x 630 pixels)
 - [x] **Custom Domain:** 
