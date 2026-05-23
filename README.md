@@ -91,6 +91,7 @@ If the site is accessible but GitHub still displays an error:
   - Replace `xeedzoqy` in `MeshCon.html` (Contact Modal form action)
   - Test email submissions in contact modal
 - [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
+- [ ] **Setup Google Analytics:** Create GA4 property and replace `G-MEASUREMENT_ID` in `MeshCon.html`
 - [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
 - [ ] **Ensure `og-image.jpg` is present** for social media link previews (1200 x 630 pixels)
 - [x] **Custom Domain:** 
