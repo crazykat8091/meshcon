@@ -59,7 +59,7 @@ The server will start at `http://localhost:3000`
 1. Push code to GitHub repository
 2. Go to repository **Settings → Pages**
 3. Select `main` branch as source
-4. Site will be available at: `https://crazykat8091.github.io/meshcon/`
+4. Site will be available at: `https://www.meshcon.tech/`
 
 **Note:** The `<base>` tag in `MeshCon.html` is configured for `/meshcon/`. The Node.js backend (chatbot API) won't work on GitHub Pages static hosting; you'll need a backend service like Vercel for the AI features to function.
 
