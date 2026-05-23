@@ -678,7 +678,7 @@
   </div>
   <div class="chat-body">
     <div id="chatMessages" class="chat-messages"></div>
-    <div id="chatOptionsContainer" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 12px;">
+    <div id="chatOptionsContainer" style="display: flex; flex-direction: column; gap: 12px;">
       <a href="mailto:info@meshcon.tech" class="chat-option">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>
         <span>Send an Email</span>
@@ -687,10 +687,10 @@
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"></path><circle cx="12" cy="13" r="3"></circle></svg>
         <span>Book a Visit</span>
       </a>
-    </div>
-    <div style="display: flex; gap: 8px; padding-top: 12px; border-top: 1px solid var(--border);">
-      <input type="text" id="agentInput" placeholder="Ask AI..." aria-label="Type your message to the AI assistant" style="flex: 1; padding: 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg); color: var(--text); font-size: 0.85rem;">
-      <button id="agentSubmit" class="btn-primary" style="padding: 8px 16px; border-radius: 8px; font-size: 0.8rem;">Ask</button>
+      <a href="#faq" class="chat-option" onclick="document.getElementById('chatOverlay').classList.remove('open')">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+        <span>View FAQ</span>
+      </a>
     </div>
   </div>
 </div>
