@@ -604,9 +604,6 @@
         </div>
         <div>
           <form class="contact-form" action="https://formspree.io/f/xeedzoqy" method="POST" id="mainContactForm">
-            <!-- Formspree Configuration -->
-            <input type="hidden" name="_subject" value="New Lead from MeshCon.tech">
-            
             <label for="contact-name" class="sr-only">Your Name</label>
             <input type="text" id="contact-name" name="name" placeholder="Your Name" required autocomplete="name" aria-required="true" aria-label="Your Name">
             
@@ -614,7 +611,10 @@
             <input type="email" id="contact-email" name="email" placeholder="Email Address" required autocomplete="email" aria-required="true">
             
             <label for="contact-subject" class="sr-only">Subject</label>
-            <input type="text" id="contact-subject" name="_subject" placeholder="Subject (e.g. Laptop Repair, Camera Install)">
+            <input type="text" id="contact-subject" name="interest" placeholder="Subject (e.g. Laptop Repair, Camera Install)">
+
+            <!-- Hidden configuration for Formspree email subject -->
+            <input type="hidden" name="_subject" value="New Lead from MeshCon.tech">
             
             <div style="display: flex; gap: 12px;"> <!-- Increased gap -->
               <input type="text" name="date_pref" placeholder="Preferred Date" onfocus="(this.type='date')" aria-label="Preferred Date" title="Preferred Date" style="flex: 1;">
