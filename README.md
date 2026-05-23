@@ -74,12 +74,13 @@ To point `www.meshcon.tech` to this repository, you must **first delete all defa
 | A | @ | 185.199.111.153 |
 | CNAME | www | crazykat8091.github.io |
 
-### ⚠️ Troubleshooting "InvalidCNAMEError"
-If GitHub shows this error, check the following in your Squarespace DNS Settings:
-1. **Delete Defaults:** Ensure NO records with Host `www` point to `ext-cust.squarespace.com`. GitHub requires `www` to point exclusively to your `.github.io` address.
-2. **Apex Records:** Ensure you have all four `A` records for the `@` host. This handles the "alternate name" (`meshcon.tech`) mentioned in the error.
-3. **CNAME File:** Verify your GitHub repository has a file named `CNAME` (all caps, no extension) in the root, containing exactly: `www.meshcon.tech`.
-4. **Propagation:** After saving, it can take up to 24 hours for the "Invalid" status to clear, though it usually updates within 30 minutes.
+### ⚠️ Troubleshooting "InvalidCNAMEError" (Site works, but error shows)
+If the site is accessible but GitHub still displays an error:
+1. **Force a Re-check:** Remove the domain in GitHub Pages settings, save, and re-add it. This clears GitHub's DNS cache.
+2. **Check for "Squarespace Defaults":** In Squarespace, ensure you have clicked "Delete Defaults" if that option is visible. Any record pointing to `ext-cust.squarespace.com` will cause this error.
+3. **Verify CNAME Content:** Ensure the `CNAME` file in your repo contains `www.meshcon.tech` (not just `meshcon.tech`).
+4. **Check for 'A' Record Conflicts:** Ensure there are no other 'A' records besides the four GitHub IPs.
+5. **Wait for SSL:** The "Invalid" error often persists until the SSL certificate is fully issued. Once you can check "Enforce HTTPS", the error usually disappears.
 
 ## 📋 Deployment Checklist
 ### Before Going Live:
