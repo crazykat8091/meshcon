@@ -85,10 +85,10 @@ If the site is accessible but GitHub still displays an error:
 ## 📋 Deployment Checklist
 ### Before Going Live:
 - [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
-- [ ] **Configure Formspree:** 
+- [x] **Configure Formspree:** 
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
-  - Replace `YOUR_FORMSPREE_ID` in `MeshCon.html` (Contact Modal form action)
+  - Replace `xeedzoqy` in `MeshCon.html` (Contact Modal form action)
   - Test email submissions in contact modal
 - [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
 - [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
