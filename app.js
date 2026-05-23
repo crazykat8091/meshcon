@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollEffects();
   initChat();
   initResponsiveCards();
+  initCharCounter();
   
   // Set current year in footer
   const yearEl = document.getElementById('year');
@@ -181,6 +182,23 @@ function initResponsiveCards() {
 
   desktopQuery.addEventListener('change', (e) => updateCards(e.matches));
   updateCards(desktopQuery.matches);
+}
+
+/**
+ * Character Counter for Contact Form
+ */
+function initCharCounter() {
+  const textarea = document.getElementById('contact-message');
+  const counter = document.getElementById('char-counter');
+  if (!textarea || !counter) return;
+
+  const updateCounter = () => {
+    const length = textarea.value.length;
+    const max = textarea.getAttribute('maxlength') || 3000;
+    counter.textContent = `${length} / ${max}`;
+  };
+
+  textarea.addEventListener('input', updateCounter);
 }
 
 /**
