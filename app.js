@@ -195,7 +195,7 @@ function initCharCounter() {
 
   const updateCounter = () => {
     const length = textarea.value.length;
-    const max = textarea.getAttribute('maxlength') || 3000;
+    const max = textarea.getAttribute('maxlength') || 1500;
     counter.textContent = `${length} / ${max}`;
   };
 

@@ -494,7 +494,7 @@ summary::-webkit-details-marker { display: none; }
   padding: 14px; color: var(--text); width: 100%; font-family: 'Inter', sans-serif;
 }
 .contact-form textarea { height: 200px; resize: vertical; min-height: 150px; }
-.char-counter { font-size: 0.72rem; color: var(--muted); text-align: right; margin-top: -6px; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; opacity: 0.8; }
+.char-counter { font-size: 0.85rem; color: var(--muted); text-align: right; margin-top: -6px; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; opacity: 0.9; font-weight: 500; }
 
 .form-status { padding: 20px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: flex-start; gap: 16px; font-size: 0.9rem; animation: fadeUp 0.4s ease; }
 .form-status.success { background: var(--accent-dim); border: 1px solid var(--accent); color: var(--text); }
