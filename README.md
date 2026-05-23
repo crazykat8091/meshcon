@@ -66,7 +66,7 @@ The server will start at `http://localhost:3000`
 ## 📋 Deployment Checklist
 
 ### Before Going Live:
-- [ ] **Update Phone Number:** Replace `+1-773-555-TECH` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
+- [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
 - [ ] **Configure Formspree:** 
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
@@ -101,6 +101,7 @@ The server will start at `http://localhost:3000`
 ## 🤝 Contact
 **Bodin Praphanthongchai (Pete)**  
 Email: info@meshcon.tech  
+Phone: +1 (000) 000-0000  
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
