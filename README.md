@@ -64,7 +64,7 @@ The server will start at `http://localhost:3000`
 **Note:** The `<base>` tag in `MeshCon.html` is configured for `/meshcon/`. The Node.js backend (chatbot API) won't work on GitHub Pages static hosting; you'll need a backend service like Vercel for the AI features to function.
 
 ## 🌐 DNS Configuration (Squarespace)
-To point `www.meshcon.tech` to this repository, ensure the following records are set in your domain provider:
+To point `www.meshcon.tech` to this repository, you must **first delete all default Squarespace DNS records** (specifically those pointing to `ext-cust.squarespace.com`), then add these:
 
 | Type | Host | Points To |
 | :--- | :--- | :--- |
@@ -73,6 +73,13 @@ To point `www.meshcon.tech` to this repository, ensure the following records are
 | A | @ | 185.199.110.153 |
 | A | @ | 185.199.111.153 |
 | CNAME | www | crazykat8091.github.io |
+
+### ⚠️ Troubleshooting "InvalidCNAMEError"
+If GitHub shows this error, check the following in your Squarespace DNS Settings:
+1. **Delete Defaults:** Ensure NO records with Host `www` point to `ext-cust.squarespace.com`. GitHub requires `www` to point exclusively to your `.github.io` address.
+2. **Apex Records:** Ensure you have all four `A` records for the `@` host. This handles the "alternate name" (`meshcon.tech`) mentioned in the error.
+3. **CNAME File:** Verify your GitHub repository has a file named `CNAME` (all caps, no extension) in the root, containing exactly: `www.meshcon.tech`.
+4. **Propagation:** After saving, it can take up to 24 hours for the "Invalid" status to clear, though it usually updates within 30 minutes.
 
 ## 📋 Deployment Checklist
 ### Before Going Live:
@@ -86,7 +93,7 @@ To point `www.meshcon.tech` to this repository, ensure the following records are
 - [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
 - [ ] **Ensure `og-image.jpg` is present** for social media link previews (1200 x 630 pixels)
 - [ ] **Custom Domain:** 
-  - Add a `CNAME` file containing `meshcon.tech` to root (if using GitHub Pages)
+  - Add a `CNAME` file containing `www.meshcon.tech` to root (if using GitHub Pages)
   - Update absolute URLs in meta tags from `https://www.meshcon.tech/` to your domain
 - [ ] **API Key Security:** 
   - Use environment variables in production
