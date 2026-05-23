@@ -85,13 +85,13 @@ If the site is accessible but GitHub still displays an error:
 ## 📋 Deployment Checklist
 ### Before Going Live:
 - [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
-- [x] **Configure Formspree:** 
+- [x] **Configure Formspree:** Integrated with ID `xeedzoqy`
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
   - Replace `xeedzoqy` in `MeshCon.html` (Contact Modal form action)
   - Test email submissions in contact modal
 - [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
-- [ ] **Setup Google Analytics:** Create GA4 property and replace `G-MEASUREMENT_ID` in `MeshCon.html`
+- [ ] **Setup Google Analytics:** (Optional) Create GA4 property to track visitors
 - [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
 - [ ] **Ensure `og-image.jpg` is present** for social media link previews (1200 x 630 pixels)
 - [x] **Custom Domain:** 
