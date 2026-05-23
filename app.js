@@ -86,10 +86,7 @@ function initNavigation() {
 
   mobileNav?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      hamburger?.classList.remove('open');
-      mobileNav?.classList.remove('open');
-      document.body.classList.remove('no-scroll');
-      document.documentElement.classList.remove('no-scroll');
+      window.closeMobile();
     });
   });
 

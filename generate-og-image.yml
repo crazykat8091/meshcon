@@ -1,0 +1,33 @@
+name: Generate OG Image
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          
+      - name: Install Dependencies
+        run: npm install playwright
+        
+      - name: Install Playwright Browsers
+        run: npx playwright install chromium --with-deps
+        
+      - name: Capture Screenshot
+        run: |
+          node -e "const playwright = require('playwright'); (async () => { const browser = await playwright.chromium.launch(); const page = await browser.newPage(); await page.setViewportSize({ width: 1200, height: 630 }); await page.goto('https://crazykat8091.github.io/meshcon/'); await page.waitForTimeout(2000); await page.screenshot({ path: 'og-image.jpg', type: 'jpeg', quality: 90 }); await browser.close(); })();"
+
+      - name: Commit and Push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-generate social preview image"
+          file_pattern: 'og-image.jpg'
