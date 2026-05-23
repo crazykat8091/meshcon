@@ -191,10 +191,12 @@ function initChat() {
   const chatOverlay = document.getElementById('chatOverlay');
   const closeChat = document.getElementById('closeChat');
   const chatMessages = document.getElementById('chatMessages');
+  const chatBadge = document.getElementById('chatBadge');
 
   chatBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
     chatOverlay?.classList.toggle('open');
+    chatBadge?.classList.remove('visible'); // Hide badge when opened
   });
 
   closeChat?.addEventListener('click', (e) => {
@@ -220,6 +222,10 @@ function initChat() {
 
   // Greeting
   setTimeout(() => {
-    appendMessage("Hi there! Need a hand with your technology? Select an option below to get started.", 'agent');
-  }, 1000);
+    // If chat is empty, send the initial greeting
+    if (chatMessages && chatMessages.children.length === 0) {
+      appendMessage("Hi there! Need a hand with your technology? Select an option below to get started.", 'agent');
+    }
+    if (chatBadge) chatBadge.classList.add('visible');
+  }, 3000); // 3 second delay for better engagement
 }

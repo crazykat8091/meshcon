@@ -516,6 +516,10 @@ summary::-webkit-details-marker { display: none; }
   animation: chat-pulse 2s infinite; display: flex; align-items: center; justify-content: center;
 }
 .floating-chat-btn svg { width: 24px; height: 24px; stroke: #fff; fill: none; stroke-width: 2; } /* Consistent sizing */
+
+.chat-badge { position: absolute; top: 0; right: 0; width: 14px; height: 14px; background: #ff3b30; border: 2px solid var(--bg); border-radius: 50%; opacity: 0; transform: scale(0); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.chat-badge.visible { opacity: 1; transform: scale(1); }
+
 .chat-overlay {
   position: fixed; bottom: 170px; right: 30px; width: 300px;
   background: var(--surface); border: 1px solid var(--border); border-radius: 16px;
