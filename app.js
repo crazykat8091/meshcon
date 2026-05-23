@@ -190,10 +190,7 @@ function initChat() {
   const chatBtn = document.getElementById('chatBtn');
   const chatOverlay = document.getElementById('chatOverlay');
   const closeChat = document.getElementById('closeChat');
-  const agentInput = document.getElementById('agentInput');
-  const agentSubmit = document.getElementById('agentSubmit');
   const chatMessages = document.getElementById('chatMessages');
-  let chatHistory = [];
 
   chatBtn?.addEventListener('click', (e) => {
     e.stopPropagation();
@@ -221,51 +218,8 @@ function initChat() {
     return msg;
   };
 
-  const handleQuery = async () => {
-    const query = agentInput.value.trim();
-    if (!query) return;
-
-    appendMessage(query, 'user');
-    agentInput.value = '';
-    
-    const loadingMsg = appendMessage(createLoader(), 'agent');
-
-    if (window.location.protocol === 'file:') {
-      loadingMsg.textContent = "AI requires a live server to respond.";
-      return;
-    }
-
-    try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: query, history: chatHistory })
-      });
-
-      const data = await response.json();
-      loadingMsg.textContent = data.reply || "I'm having trouble thinking right now.";
-      if (data.history) chatHistory = data.history;
-    } catch (err) {
-      loadingMsg.textContent = "Connection error.";
-    }
-  };
-
-  agentSubmit?.addEventListener('click', handleQuery);
-  agentInput?.addEventListener('keypress', (e) => { if (e.key === 'Enter') handleQuery(); });
-
   // Greeting
   setTimeout(() => {
-    appendMessage("Hi there! I'm your MeshCon AI assistant. How can I help you with your tech today?", 'agent');
+    appendMessage("Hi there! Welcome to MeshCon. How can I help you today?", 'agent');
   }, 1000);
-}
-
-function createLoader() {
-  const container = document.createElement('div');
-  container.className = 'typing-dots';
-  for (let i = 0; i < 3; i++) {
-    const dot = document.createElement('div');
-    dot.className = 'dot';
-    container.appendChild(dot);
-  }
-  return container;
 }

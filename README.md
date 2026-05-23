@@ -106,7 +106,7 @@ If the site is accessible but GitHub still displays an error:
 - [ ] **Performance:** Run [PageSpeed Insights](https://pagespeed.web.dev/) - Target: 90+/100
 - [ ] **Social Preview:** Use [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) to verify OG image
 - [ ] **Mobile Responsive:** Test on iPhone/Android in Chrome DevTools
-- [ ] **Chatbot:** Test AI chat with `/api/chat` endpoint
+- [ ] **Chatbot:** (Disabled) Update UI when AI backend is ready
 - [ ] **Accessibility:** Check WCAG 2.1 AA compliance with [axe DevTools](https://www.deque.com/axe/devtools/)
 - [ ] **DNS:** Verify domain resolves correctly and SSL cert is valid
 
