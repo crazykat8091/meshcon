@@ -63,8 +63,18 @@ The server will start at `http://localhost:3000`
 
 **Note:** The `<base>` tag in `MeshCon.html` is configured for `/meshcon/`. The Node.js backend (chatbot API) won't work on GitHub Pages static hosting; you'll need a backend service like Vercel for the AI features to function.
 
-## 📋 Deployment Checklist
+## 🌐 DNS Configuration (Squarespace)
+To point `www.meshcon.tech` to this repository, ensure the following records are set in your domain provider:
 
+| Type | Host | Points To |
+| :--- | :--- | :--- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | crazykat8091.github.io |
+
+## 📋 Deployment Checklist
 ### Before Going Live:
 - [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
 - [ ] **Configure Formspree:** 
