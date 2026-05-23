@@ -220,6 +220,6 @@ function initChat() {
 
   // Greeting
   setTimeout(() => {
-    appendMessage("Hi there! Welcome to MeshCon. How can I help you today?", 'agent');
+    appendMessage("Hi there! Need a hand with your technology? Select an option below to get started.", 'agent');
   }, 1000);
 }
