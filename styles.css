@@ -495,6 +495,15 @@ summary::-webkit-details-marker { display: none; }
 }
 .contact-form textarea { height: 200px; resize: vertical; min-height: 150px; }
 .char-counter { font-size: 0.72rem; color: var(--muted); text-align: right; margin-top: -6px; margin-bottom: 4px; font-family: 'JetBrains Mono', monospace; opacity: 0.8; }
+
+.form-status { padding: 20px; border-radius: 12px; margin-bottom: 20px; display: flex; align-items: flex-start; gap: 16px; font-size: 0.9rem; animation: fadeUp 0.4s ease; }
+.form-status.success { background: var(--accent-dim); border: 1px solid var(--accent); color: var(--text); }
+.form-status .status-icon { width: 24px; height: 24px; stroke: var(--accent); flex-shrink: 0; }
+.form-status strong { display: block; color: var(--accent); margin-bottom: 4px; }
+.form-status p { margin: 0; opacity: 0.8; line-height: 1.4; }
+
+.contact-form.submitting { opacity: 0.6; pointer-events: none; }
+
 .social-links { display: flex; gap: 12px; margin-top: 20px; }
 .social-links a { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent); }
 .social-links a:hover { border-color: var(--accent); transform: translateY(-3px); background: var(--accent-dim); }

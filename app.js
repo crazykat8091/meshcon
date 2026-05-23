@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initChat();
   initResponsiveCards();
   initCharCounter();
+  initFormSubmission();
   
   // Set current year in footer
   const yearEl = document.getElementById('year');
@@ -199,6 +200,46 @@ function initCharCounter() {
   };
 
   textarea.addEventListener('input', updateCounter);
+}
+
+/**
+ * AJAX Form Submission for Formspree
+ */
+function initFormSubmission() {
+  const form = document.getElementById('mainContactForm');
+  const successMsg = document.getElementById('form-success');
+  if (!form || !successMsg) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    const button = form.querySelector('button[type="submit"]');
+    const originalText = button.textContent;
+    
+    button.textContent = "Sending...";
+    form.classList.add('submitting');
+
+    const data = new FormData(form);
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        successMsg.style.display = 'flex';
+        successMsg.setAttribute('aria-hidden', 'false');
+        button.style.display = 'none'; // Hide button after success
+      }
+    } catch (err) {
+      button.textContent = "Error - Try again";
+    } finally {
+      form.classList.remove('submitting');
+      if (button.style.display !== 'none') button.textContent = originalText;
+    }
+  });
 }
 
 /**
