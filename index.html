@@ -610,7 +610,14 @@
           </div>
         </div>
         <div>
-          <form class="contact-form" action="https://formspree.io/f/xeedzoqy" method="POST" id="mainContactForm">
+          <form class="contact-form" action="https://formspree.io/f/xeedzoqy" method="POST" id="mainContactForm" novalidate>
+            <div id="form-success" class="form-status success" aria-hidden="true" style="display: none;">
+              <svg viewBox="0 0 24 24" class="status-icon"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
+              <div>
+                <strong>Message Sent!</strong>
+                <p>Thanks for reaching out, Pete will be in touch shortly.</p>
+              </div>
+            </div>
             <label for="contact-name" class="sr-only">Your Name</label>
             <input type="text" id="contact-name" name="name" placeholder="Your Name" required autocomplete="name" aria-required="true" aria-label="Your Name">
             
