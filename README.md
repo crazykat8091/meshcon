@@ -1,7 +1,7 @@
 # MeshCon · Tech Support That Actually Comes To You
 
 [![Live Site](https://img.shields.io/badge/Live%20Site-meshcon.tech-ff8a2a?style=flat-square&logo=google-chrome&logoColor=white)](https://www.meshcon.tech)
-[![Version](https://img.shields.io/badge/Version-1.29-0e0e0e?style=flat-square)](https://github.com/crazykat8091/meshcon/commits/main)
+[![Version](https://img.shields.io/badge/Version-1.54-0e0e0e?style=flat-square)](...)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-181717?style=flat-square&logo=github)](https://pages.github.com)
 [![Stack](https://img.shields.io/badge/Stack-HTML5%20%7C%20CSS3%20%7C%20JS-f7df1e?style=flat-square)](https://github.com/crazykat8091/meshcon)
