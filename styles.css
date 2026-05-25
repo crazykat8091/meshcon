@@ -150,7 +150,7 @@ header.scrolled {
   width: auto;
   height: 82px; 
   aspect-ratio: 11 / 4; /* Precisely matches 1100x400 viewBox */
-  object-fit: contain; /* Ensures consistent centering and scaling */
+  object-fit: contain; /* Ensures consistent centering and prevents skewing */
   display: block; 
   max-width: 100%;
   filter: drop-shadow(0 2px 8px var(--accent-dim));

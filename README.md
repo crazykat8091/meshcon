@@ -1,5 +1,5 @@
 # MeshCon · Tech Support That Actually Shows Up
-### Systems Specialist // On-Site Expert · v1.24
+### Systems Specialist // On-Site Expert · v1.29
 
 MeshCon offers expert, on-site tech support right at your home or business in Chicago and the surrounding 35-mile radius. This repository holds the source code for the MeshCon web platform and its high-performance branding assets.
 
@@ -86,7 +86,7 @@ If the site is accessible but GitHub still displays an error:
 ### Before Going Live:
 - [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
 - [x] **Update WhatsApp Link:** Integrated `wa.link/ncmjrk`
-- [x] **Configure Formspree:** Integrated with ID `xeedzoqy`
+- [x] **Configure Formspree:** Integrated with ID `xeedzoqy` and verified testing
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
   - Replace `xeedzoqy` in `MeshCon.html` (Contact Modal form action)
@@ -126,4 +126,4 @@ Phone: +1 224-368-9525
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
-*Developed by Bodin Praphanthongchai (Pete) · Version 1.24*
+*Developed by Bodin Praphanthongchai (Pete) · Version 1.29*

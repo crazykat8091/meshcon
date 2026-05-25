@@ -25,10 +25,10 @@
     <rect width="1050" height="600" fill="#000000" rx="20"/>
     <rect width="8" height="600" fill="#ff8a2a"/>
     
-    <g transform="translate(60, 80)">
+    <g transform="translate(60, 70)">
       <text class="sans-bold" font-size="44" fill="#f0ebe3">Bodin Praphanthongchai (Pete)</text>
       <text y="50" class="text-mono" font-weight="500" font-size="22" fill="#ff8a2a">Systems Specialist // On-Site Expert</text>
-      <g transform="translate(0, 160)" font-family="Inter, sans-serif" font-size="20">
+      <g transform="translate(0, 115)" font-family="Inter, sans-serif" font-size="20">
         <text fill="#a0a0a0" class="text-mono">WEB:</text>
         <text x="100" fill="#f0ebe3">www.meshcon.tech</text>
         <text y="50" fill="#a0a0a0" class="text-mono">MAIL:</text>
@@ -41,16 +41,16 @@
     </g>
     
     <!-- WhatsApp QR Code Section -->
-    <g transform="translate(60, 420)">
-      <rect width="140" height="140" fill="#ffffff" stroke="#222" rx="12"/>
-      <text x="155" y="30" class="text-mono" font-size="14" font-weight="700" fill="#ff8a2a">SCAN TO CHAT</text>
-      <text x="155" y="55" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">Reach Pete directly on</text>
-      <text x="155" y="75" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">WhatsApp for secure,</text>
-      <text x="155" y="95" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">on-site support.</text>
-      <image href="whatsapp-qr.png" x="20" y="20" width="100" height="100"/>
+    <g transform="translate(60, 410)">
+      <rect width="180" height="180" fill="#ffffff" stroke="#222" rx="12"/>
+      <text x="195" y="35" class="text-mono" font-size="14" font-weight="700" fill="#ff8a2a">SCAN TO CHAT</text>
+      <text x="195" y="60" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">Reach Pete directly on</text>
+      <text x="195" y="80" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">WhatsApp for secure,</text>
+      <text x="195" y="100" font-family="Inter, sans-serif" font-size="13" fill="#a0a0a0">on-site support.</text>
+      <image href="whatsapp-qr.png" x="5" y="5" width="170" height="170" preserveAspectRatio="xMidYMid meet"/>
 
       <!-- Social Icons Group -->
-      <g transform="translate(155, 110) scale(0.85)" stroke="#ff8a2a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <g transform="translate(195, 125) scale(0.85)" stroke="#ff8a2a" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
         <g transform="translate(35, 0)"><path d="M4 4l11.733 16h4.267l-11.733 -16zM4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/></g>
         <g transform="translate(70, 0)"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></g>
@@ -72,6 +72,6 @@
         </g>
       </g>
     </g>
-    <text x="1020" y="570" text-anchor="end" class="text-mono" font-size="12" fill="#444" opacity="0.3">v1.24</text>
+    <text x="1020" y="570" text-anchor="end" class="text-mono" font-size="12" fill="#444" opacity="0.3">v1.29</text>
   </g>
 </svg>
