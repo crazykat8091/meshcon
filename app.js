@@ -1,5 +1,5 @@
 /**
- * MeshCon v1.54 - Core Application Logic
+ * MeshCon v1.55 - Core Application Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -28,7 +28,7 @@ function initTheme() {
   const logoImgs = document.querySelectorAll('.logo-img');
 
   const updateToggle = (theme) => {
-    if (metaTheme) metaTheme.setAttribute('content', theme === 'dark' ? '#000000' : '#fcfaf8');
+    if (metaTheme) metaTheme.setAttribute('content', theme === 'dark' ? '#000000' : '#ffffff');
     if (btn) btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
     
     // Switch to theme-optimized branding with path awareness
