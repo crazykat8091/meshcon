@@ -664,6 +664,12 @@ summary::-webkit-details-marker { display: none; }
 .contact-form.submitting { opacity: 0.6; pointer-events: none; }
 
 .social-links { display: flex; gap: 12px; margin-top: 20px; }
+
+.contact-socials {
+  justify-content: center;
+  max-width: 280px;
+}
+
 .social-links a { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: var(--accent); }
 .social-links a:hover { border-color: var(--accent); transform: translateY(-3px); background: var(--accent-dim); }
 

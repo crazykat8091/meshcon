@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.55.0] - 2024-12-07
+
+### Added
+- **Audit & Optimization**: Comprehensive consistency pass across all 12 HTML files.
+- **Code Quality**: Refactored contact modal inline styles into `styles.css`.
+
+### Changed
+- **Synchronicity**: Unified all page versions to v1.55.
+- **UI Consistency**: Verified social media icon order (FB, IG, X, Discord, WA) globally.
+
 ## [1.54.0] - 2024-12-06
 
 ### Added
