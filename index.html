@@ -7,7 +7,7 @@
 <!-- <base href="/meshcon/"> -->
 <meta name="google-site-verification" content="google841b49ff20b88fd5">
 <meta name="description" content="MeshCon: Your trusted local tech expert in Chicago. I provide on-site computer repair, WiFi setup, smart home integration, and data recovery directly at your home or business within a 35-mile radius.">
-<meta name="keywords" content="MeshCon, Tech Support Chicago, PC Repair Chicago, On-Site IT Services, NAS Setup, WiFi Optimization, Smart Home Chicago, Data Recovery, Local Tech Expert, Chicago Computer Repair">
+<meta name="keywords" content="MeshCon, Tech Support Chicago, PC Repair Chicago, On-Site IT Services, NAS Setup, WiFi Optimization, WiFi Networking, Smart Home Chicago, Data Recovery, Local Tech Expert, Chicago Computer Repair, Vanilla JS">
 <meta name="robots" content="index, follow">
 <meta property="og:title" content="MeshCon · Expert On-Site Tech Support in Chicago">
 <meta property="og:description" content="Tired of tech headaches? MeshCon brings 30+ years of expert, on-site tech support directly to your door in Chicago and surrounding suburbs. No jargon, just real solutions.">
@@ -38,111 +38,39 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "ComputerRepairService",
     "name": "MeshCon Technical Solutions",
     "url": "https://www.meshcon.tech",
     "telephone": "+1-224-368-9525",
     "email": "info@meshcon.tech",
-    "founder": {
-      "@type": "Person",
-      "name": "Bodin Praphanthongchai (Pete)"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Chicago",
-      "addressRegion": "IL",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 41.8781,
-      "longitude": -87.6298
-    },
-    "serviceArea": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 41.8781,
-        "longitude": -87.6298
-      },
-      "geoRadius": "56327"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "19:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
-        "opens": "10:00",
-        "closes": "17:00"
-      }
-    ],
     "priceRange": "$$",
-    "description": "Expert on-site technical support in Chicago and surrounding suburbs. Services include computer repair, WiFi setup, and smart home installation. Emergency support available 24/7.",
+    "paymentAccepted": "Cash, Zelle, Venmo",
+    "founder": { "@type": "Person", "name": "Bodin Praphanthongchai (Pete)" },
+    "address": { "@type": "PostalAddress", "addressLocality": "Chicago", "addressRegion": "IL", "addressCountry": "US" },
+    "geo": { "@type": "GeoCoordinates", "latitude": 41.8781, "longitude": -87.6298 },
+    "areaServed": [
+      "Chicago", "Evanston", "Wilmette", "Winnetka", "Highland Park", "Lake Forest", "Skokie", "Morton Grove", "Glenview", "Northbrook", "Deerfield", "Lincolnshire", "Park Ridge", "Des Plaines", "Mount Prospect", "Prospect Heights", "Wheeling", "Arlington Heights", "Rolling Meadows", "Schaumburg"
+    ],
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "17:00" }
+    ],
+    "description": "Expert on-site technical support in Chicago (North Side and O'Hare Corridor) and suburbs. Diagnostic fee: $125. 24/7 emergency support available. 30-day labor warranty applies.",
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
       "name": "MeshCon Technical Services",
       "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Computer Repair"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "WiFi Setup"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Smart Home Installation"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Data Recovery"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Senior Tech Help"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Small Business IT"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Phone & Tablet Setup"
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Printer Support"
-          }
-        }
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Computer Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "PC & Laptop Optimization" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "WiFi Setup & Mesh Networking" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "NAS & Data Backup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Smart Home Installation" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IP Security Cameras" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Senior Tech Help" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "One-on-One Tech Lessons" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Phone & Tablet Setup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Printer Support" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Small Business IT" } }
       ]
     }
   }
@@ -175,6 +103,53 @@
   });
 </script>
 <link rel="stylesheet" href="styles.css">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  // Note: debug_mode is enabled for your initial testing
+  gtag('config', 'G-XXXXXXXXXX', { 'debug_mode': true });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = (name, props) => gtag('event', name, props);
+
+    // 1. CTA Button Clicks
+    document.querySelectorAll('a[href="#contact"], .btn-primary').forEach(el => {
+      el.addEventListener('click', () => track('cta_click', { button_label: 'Book a Visit' }));
+    });
+    document.querySelectorAll('a[href="#services"]').forEach(el => {
+      el.addEventListener('click', () => track('cta_click', { button_label: 'View Services' }));
+    });
+
+    // 2. WhatsApp & Phone Clicks
+    document.querySelectorAll('a[href*="wa.link"]').forEach(el => {
+      el.addEventListener('click', () => track('whatsapp_click', { destination: el.href }));
+    });
+    document.querySelectorAll('a[href^="tel:"]').forEach(el => {
+      el.addEventListener('click', () => track('phone_click', { phone_number: el.href }));
+    });
+
+    // 3. Contact Form Submission
+    const form = document.getElementById('mainContactForm');
+    if (form) {
+      form.addEventListener('submit', () => track('form_submission', { form_id: 'main_contact_form' }));
+    }
+
+    // 4. Service Card Views (Intersection Observer)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const serviceTitle = entry.target.querySelector('h3')?.innerText || 'Service Card';
+          track('service_view', { service_name: serviceTitle });
+          observer.unobserve(entry.target); // Track once per session
+        }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.service-card').forEach(card => observer.observe(card));
+  });
+</script>
 </head>
 <body>
 <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -260,7 +235,7 @@
           <a href="#contact" class="btn-primary" onclick="openContactModal(event)">Book a Visit</a>
         </div>
         <div class="cta-secondary">
-          <a href="https://wa.me/12243689525" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.link/6hs9t7" class="btn-whatsapp" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" fill="none" stroke-width="2.5"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             WhatsApp
           </a>
@@ -631,18 +606,18 @@
             <a href="https://facebook.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
             </a>
-            <a href="https://x.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
+            <!-- <a href="https://x.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l11.733 16h4.267l-11.733 -16zM4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
-            </a>
+            </a> -->
             <a href="https://instagram.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a>
             <a href="https://wa.link/6hs9t7" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
             </a>
-            <a href="https://discord.gg/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+            <!-- <a href="https://discord.gg/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
               <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0m4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0"></path><path d="M7.5 8.5c1.4-1.1 3.2-1.5 4.5-1.5s3.1.4 4.5 1.5c.7.5 1.5.5 2.2 0l.5-.4c1-1 2.3-1.6 3.7-1.6h.1c.6 0 1.1.5 1.1 1.1v2.1c0 3.7-2 7.1-5.3 8.8l-.5.2c-.8.4-1.7.4-2.5 0l-.5-.2C12 17.1 10 13.7 10 10V7.9c0-.6.5-1.1 1.1-1.1h.1c1.4 0 2.7.6 3.7 1.6l.5.4c.7.5 1.5.5 2.2 0"></path></svg>
-            </a>
+            </a> -->
           </div>
         </div>
         <div>
@@ -696,18 +671,18 @@
     <a href="https://facebook.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
     </a>
-    <a href="https://x.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
+    <!-- <a href="https://x.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on X (formerly Twitter)">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 4l11.733 16h4.267l-11.733 -16zM4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg> <!-- Note: Path verified for modern X branding -->
-    </a>
+    </a> -->
     <a href="https://instagram.com/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
     </a>
     <a href="https://wa.link/6hs9t7" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
     </a>
-    <a href="https://discord.gg/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+    <!-- <a href="https://discord.gg/MeshCon" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
       <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 12a1 1 0 1 0 2 0 1 1 0 0 0-2 0m4 0a1 1 0 1 0 2 0 1 1 0 0 0-2 0"></path><path d="M7.5 8.5c1.4-1.1 3.2-1.5 4.5-1.5s3.1.4 4.5 1.5c.7.5 1.5.5 2.2 0l.5-.4c1-1 2.3-1.6 3.7-1.6h.1c.6 0 1.1.5 1.1 1.1v2.1c0 3.7-2 7.1-5.3 8.8l-.5.2c-.8.4-1.7.4-2.5 0l-.5-.2C12 17.1 10 13.7 10 10V7.9c0-.6.5-1.1 1.1-1.1h.1c1.4 0 2.7.6 3.7 1.6l.5.4c.7.5 1.5.5 2.2 0"></path></svg>
-    </a>
+    </a> -->
   </div>
   <div class="footer-copy">© <span id="year"></span> MeshCon · Proudly based in Chicago · Visits start at $125</div>
 </footer>

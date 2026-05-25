@@ -1,5 +1,5 @@
 # MeshCon · Tech Support That Actually Shows Up
-### Source code for the official MeshCon website (https://www.meshcon.tech). A high-performance, responsive static site for a Chicago-based on-site tech support business.
+### Source code for MeshCon Technical Solutions, a Chicago-based business providing expert on-site tech support, computer repair, and WiFi networking. Professional IT solutions delivered directly to your door. Live at: https://www.meshcon.tech
 
 [!Version](https://github.com/crazykat8091/meshcon)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -95,8 +95,8 @@ If the site is accessible but GitHub still displays an error:
 
 ## 📋 Deployment Checklist
 ### Before Going Live:
-- [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `index.html` (Search for "tel:" links in Hero and Contact sections)
-- [x] **Update WhatsApp Link:** Integrated `wa.link/ncmjrk`
+- [x] **Update Phone Number:** Phone number confirmed: +1 224-368-9525
+- [x] **Update WhatsApp Link:** Integrated `wa.link/6hs9t7`
 - [x] **Configure Formspree:** Integrated with ID `xeedzoqy` and verified testing
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
@@ -104,9 +104,9 @@ If the site is accessible but GitHub still displays an error:
   - Test email submissions in contact modal
 - [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
 - [x] **Privacy Contact:** Integrated `whatsapp-qr.png` for secure scanning
-- [ ] **Setup Google Analytics:** (Optional) Create GA4 property to track visitors
-- [ ] **Social Media Links:** Update links in both the Contact Modal and the Footer
-- [ ] **Ensure `og-image.jpg` is present** for social media link previews (1200 x 630 pixels)
+- [x] **Setup Google Analytics:** GA4 integrated (Measurement ID: G-XXXXXXXXXX)
+- [x] **Social Media Links:** Verified: Active links only; placeholders removed
+- [x] **Ensure og-image.jpg is present:** og-image.jpg confirmed at 1200x630px
 - [x] **Custom Domain:** 
   - Add a `CNAME` file containing `www.meshcon.tech` to root (if using GitHub Pages)
   - Update absolute URLs in meta tags from `https://www.meshcon.tech/` to your domain
@@ -114,6 +114,12 @@ If the site is accessible but GitHub still displays an error:
   - Use environment variables in production
   - Never commit API keys to repository
   - Rotate keys if accidentally exposed
+
+### 🔜 Upcoming
+- [ ] Suburb landing pages (Arlington Heights, Evanston, Schaumburg)
+- [ ] Blog section (3-5 local SEO posts)
+- [ ] Google Business Profile (pending verification)
+- [ ] AI Chatbot re-enable (pending Vercel backend deployment)
 
 ### Testing & Validation:
 - [ ] **Performance:** Run [PageSpeed Insights](https://pagespeed.web.dev/) - Target: 90+/100

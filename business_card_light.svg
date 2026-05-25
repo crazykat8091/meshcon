@@ -10,32 +10,39 @@
   <!-- BUSINESS CARD FRONT -->
   <g transform="translate(0,0)">
     <rect width="1050" height="600" fill="#fcfaf8" rx="20"/>
+    <!-- Subtle Hero Grid Pattern from Website -->
+    <defs>
+      <pattern id="gridLight" width="50" height="50" patternUnits="userSpaceOnUse">
+        <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#bf5a00" stroke-width="1" stroke-opacity="0.04"/>
+      </pattern>
+    </defs>
+    <rect width="1050" height="600" fill="url(#gridLight)" rx="20"/>
     
     <!-- MeshCon Logo Container -->
-    <image href="MeshCon-Logo-light.png" x="225" y="170" width="600" height="218" preserveAspectRatio="xMidYMid meet"/>
-    <text x="525" y="440" text-anchor="middle" class="text-mono" font-weight="700" font-size="20" fill="#bf5a00" letter-spacing="4">// EXPERT ON-SITE TECH SUPPORT</text>
+    <image href="MeshCon-Logo-light.svg" x="225" y="180" width="600" height="218" preserveAspectRatio="xMidYMid meet"/>
+    <text x="525" y="460" text-anchor="middle" class="text-mono" font-weight="700" font-size="20" fill="#bf5a00" letter-spacing="4">// EXPERT ON-SITE TECH SUPPORT</text>
     <rect x="0" y="590" width="1050" height="10" fill="#bf5a00"/>
   </g>
 
-  <text x="525" y="660" text-anchor="middle" font-family="monospace" font-size="14" fill="#a0a0a0">MESHCON BRANDING · FRONT (TOP) / BACK (BOTTOM)</text>
+  <text x="525" y="665" text-anchor="middle" font-family="monospace" font-size="14" fill="#a0a0a0">MESHCON BRANDING · FRONT (TOP) / BACK (BOTTOM)</text>
 
   <!-- BUSINESS CARD BACK -->
   <g transform="translate(0,700)">
     <rect width="1050" height="600" fill="#fcfaf8" rx="20"/>
     <rect width="8" height="600" fill="#bf5a00"/>
     
-    <g transform="translate(60, 70)">
+    <g transform="translate(60, 60)">
       <text class="sans-bold" font-size="44" fill="#000000">Bodin Praphanthongchai (Pete)</text>
-      <text y="50" class="text-mono" font-weight="500" font-size="22" fill="#bf5a00">Systems Specialist // On-Site Expert</text>
-      <g transform="translate(0, 115)" font-family="Inter, sans-serif" font-size="20">
+      <text y="45" class="text-mono" font-weight="500" font-size="22" fill="#bf5a00">Systems Specialist // On-Site Expert</text>
+      <g transform="translate(0, 110)" font-family="Inter, sans-serif" font-size="20">
         <text fill="#4a443b" class="text-mono">WEB:</text>
-        <text x="100" fill="#1a1612">www.meshcon.tech</text>
+        <text x="110" fill="#1a1612">www.meshcon.tech</text>
         <text y="50" fill="#4a443b" class="text-mono">MAIL:</text>
-        <text x="100" y="50" fill="#1a1612">info@meshcon.tech</text>
+        <text x="110" y="50" fill="#1a1612">info@meshcon.tech</text>
         <text y="100" fill="#4a443b" class="text-mono">PHONE:</text>
-        <text x="100" y="100" fill="#1a1612">+1 224-368-9525</text>
+        <text x="110" y="100" fill="#1a1612">+1 224-368-9525</text>
         <text y="150" fill="#4a443b" class="text-mono">AREA:</text>
-        <text x="100" y="150" fill="#1a1612">Chicago North/NW</text>
+        <text x="110" y="150" fill="#1a1612">Chicago North/NW</text>
       </g>
     </g>
 
@@ -43,10 +50,16 @@
     <g transform="translate(60, 410)">
       <rect width="180" height="180" fill="#ffffff" stroke="#e8e4df" rx="12"/>
       <text x="195" y="35" class="text-mono" font-size="14" fill="#bf5a00" font-weight="700">SCAN TO CHAT</text>
-      <text x="195" y="60" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">Reach us directly on</text>
+      <text x="195" y="60" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">Reach Pete directly on</text>
       <text x="195" y="80" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">WhatsApp for secure,</text>
       <text x="195" y="100" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">on-site support.</text>
       <image href="whatsapp-qr.png" x="5" y="5" width="170" height="170" preserveAspectRatio="xMidYMid meet"/>
+      
+      <!-- Privacy Badge -->
+      <g transform="translate(195, 145)">
+        <rect width="165" height="30" rx="15" fill="#ffffff" stroke="#e8e4df"/>
+        <text x="15" y="20" font-family="Inter, sans-serif" font-size="12" fill="#bf5a00" font-weight="600">✓ PRIVACY GUARANTEED</text>
+      </g>
 
       <!-- Social Icons Group -->
       <g transform="translate(195, 125) scale(0.85)" stroke="#bf5a00" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -57,8 +70,8 @@
       </g>
     </g>
 
-    <g transform="translate(620, 180)">
-      <rect width="370" height="350" rx="16" fill="#ffffff" stroke="#d8d2c8" stroke-width="1.5"/>
+    <g transform="translate(620, 170)">
+      <rect width="370" height="420" rx="16" fill="#ffffff" stroke="#e8e4df" stroke-width="1.5"/>
       <g transform="translate(30, 45)">
         <text class="text-mono" font-weight="700" font-size="18" fill="#bf5a00" letter-spacing="1">CORE SERVICES:</text>
         <g transform="translate(0, 40)" font-family="Inter, sans-serif" font-size="17" fill="#1a1612">
@@ -71,6 +84,6 @@
         </g>
       </g>
     </g>
-    <text x="1020" y="570" text-anchor="end" class="text-mono" font-size="12" fill="#4a443b" opacity="0.3">v1.29</text>
+    <text x="1020" y="570" text-anchor="end" class="text-mono" font-size="12" fill="#4a443b" opacity="0.3">v1.52</text>
   </g>
 </svg>
