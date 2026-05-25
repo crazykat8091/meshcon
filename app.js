@@ -1,5 +1,5 @@
 /**
- * MeshCon v1.23 - Core Application Logic
+ * MeshCon v1.24 - Core Application Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {

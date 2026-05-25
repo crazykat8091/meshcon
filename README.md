@@ -1,5 +1,5 @@
 # MeshCon · Tech Support That Actually Shows Up
-### Systems Specialist // On-Site Expert · v1.23
+### Systems Specialist // On-Site Expert · v1.24
 
 MeshCon offers expert, on-site tech support right at your home or business in Chicago and the surrounding 35-mile radius. This repository holds the source code for the MeshCon web platform and its high-performance branding assets.
 
@@ -126,4 +126,4 @@ Phone: +1 224-368-9525
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
-*Developed by Bodin Praphanthongchai (Pete) · Version 1.23*
+*Developed by Bodin Praphanthongchai (Pete) · Version 1.24*
