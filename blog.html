@@ -31,13 +31,16 @@
 </div>
 
 <header>
-  <a href="index.html#home" class="logo" aria-label="MeshCon Home"><img src="MeshCon-Logo-dark.svg" alt="MeshCon" class="logo-img" width="226" height="82"></a>
+  <a href="index.html#home" class="logo" aria-label="MeshCon Home"><img src="MeshCon-Logo-dark.svg" alt="MeshCon" class="logo-img" width="226" height="82" loading="eager" decoding="async" fetchpriority="high"></a>
   <div class="header-right">
     <nav>
       <a href="index.html#services">Services</a>
       <a href="index.html#area">Service Area</a>
       <a href="index.html#about">About</a>
+      <a href="index.html#gallery">Gallery</a>
       <a href="blog.html" class="nav-blog">Blog</a>
+      <a href="index.html#reviews">Reviews</a>
+      <a href="index.html#legal">Legal</a>
       <a href="index.html#contact">Contact</a>
     </nav>
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
@@ -51,8 +54,14 @@
 
 <nav class="mobile-nav" id="mobileNav">
   <a href="index.html#services" onclick="closeMobile()">Services</a>
+  <a href="index.html#process" onclick="closeMobile()">Process</a>
   <a href="index.html#area" onclick="closeMobile()">Service Area</a>
+  <a href="index.html#about" onclick="closeMobile()">About</a>
+  <a href="index.html#gallery" onclick="closeMobile()">Gallery</a>
   <a href="blog.html" onclick="closeMobile()" class="nav-blog">Blog</a>
+  <a href="index.html#reviews" onclick="closeMobile()">Reviews</a>
+  <a href="index.html#faq" onclick="closeMobile()">FAQ</a>
+  <a href="index.html#legal" onclick="closeMobile()">Legal</a>
   <a href="index.html#contact" onclick="closeMobile()">Contact</a>
 </nav>
 
