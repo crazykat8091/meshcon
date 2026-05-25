@@ -33,7 +33,7 @@
         <text y="50" fill="#4a443b" class="text-mono">MAIL:</text>
         <text x="100" y="50" fill="#1a1612">info@meshcon.tech</text>
         <text y="100" fill="#4a443b" class="text-mono">PHONE:</text>
-        <text x="100" y="100" fill="#1a1612">+1 (000) 000-0000</text>
+        <text x="100" y="100" fill="#1a1612">+1 224-368-9525</text>
         <text y="150" fill="#4a443b" class="text-mono">AREA:</text>
         <text x="100" y="150" fill="#1a1612">Chicago North/NW</text>
       </g>
@@ -43,7 +43,6 @@
     <g transform="translate(60, 420)">
       <rect width="140" height="140" fill="#ffffff" stroke="#e8e4df" rx="12"/>
       <text x="155" y="30" class="text-mono" font-size="14" fill="#bf5a00" font-weight="700">SCAN TO CHAT</text>
-      <text x="155" y="55" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">Reach Pete directly on</text>
       <text x="155" y="55" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">Reach us directly on</text>
       <text x="155" y="75" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">WhatsApp for secure,</text>
       <text x="155" y="95" font-family="Inter, sans-serif" font-size="13" fill="#4a443b">on-site support.</text>

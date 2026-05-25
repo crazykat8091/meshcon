@@ -122,7 +122,7 @@ If the site is accessible but GitHub still displays an error:
 ## 🤝 Contact
 **Bodin Praphanthongchai (Pete)**  
 Email: info@meshcon.tech  
-Phone: +1 (000) 000-0000  
+Phone: +1 224-368-9525  
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
