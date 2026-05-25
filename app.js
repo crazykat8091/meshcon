@@ -1,5 +1,5 @@
 /**
- * MeshCon v1.52 - Core Application Logic
+ * MeshCon v1.54 - Core Application Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initResponsiveCards();
   initCharCounter();
   initFormSubmission();
+  initMagneticButtons();
   
   // Set current year in footer
   const yearEl = document.getElementById('year');
@@ -297,4 +298,35 @@ function initChat() {
     }
     if (chatBadge) chatBadge.classList.add('visible');
   }, 3000); // 3 second delay for better engagement
+}
+
+/**
+ * Magnetic Button Effect & Liquid Glow Tracking
+ */
+function initMagneticButtons() {
+  const buttons = document.querySelectorAll('.btn-primary, .btn-ghost, .btn-whatsapp');
+  
+  buttons.forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      // Update CSS variables for the radial shimmer
+      btn.style.setProperty('--x', `${x}px`);
+      btn.style.setProperty('--y', `${y}px`);
+      
+      // Magnetic pull (subtle 4px movement)
+      const pullX = (x - rect.width / 2) / 8;
+      const pullY = (y - rect.height / 2) / 8;
+      
+      btn.style.transform = `translate(${pullX}px, ${pullY}px) scale(1.02)`;
+    });
+    
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+      btn.style.setProperty('--x', '50%');
+      btn.style.setProperty('--y', '50%');
+    });
+  });
 }

@@ -137,4 +137,4 @@ Phone: +1 224-368-9525
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
-*Developed by Bodin Praphanthongchai (Pete) · Version 1.52*
+*Developed by Bodin Praphanthongchai (Pete) · Version 1.54*
