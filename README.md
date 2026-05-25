@@ -1,49 +1,60 @@
 # MeshCon · Tech Support That Actually Shows Up
-### Systems Specialist // On-Site Expert · v1.29
+### Source code for the official MeshCon website (https://www.meshcon.tech). A high-performance, responsive static site for a Chicago-based on-site tech support business.
 
-MeshCon offers expert, on-site tech support right at your home or business in Chicago and the surrounding 35-mile radius. This repository holds the source code for the MeshCon web platform and its high-performance branding assets.
+[!Version](https://github.com/crazykat8091/meshcon)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Live Site](https://img.shields.io/badge/Live-meshcon.tech-blue?style=flat-square)](https://www.meshcon.tech)
 
-## 🚀 Project Overview
+---
 
-At MeshCon, I believe tech support should be personal, precise, and convenient. For over 30 years, I've been solving the tech problems that frustrate people most, bringing my expert engineering directly to your door within a 35-mile radius of Chicago. Forget confusing jargon, hidden fees, or endless waits at a repair shop. I'm here to provide honest, on-site solutions.
-
-### Core Services
-- **Laptop & PC Performance:** Speeding up slow computers, optimizing systems, and performing hardware upgrades to get your devices running like new.
-- **Seamless WiFi & Networking:** Eliminating dead zones and setting up robust, reliable networks for a smooth online experience throughout your home or office.
-- **Secure Data & Storage:** Implementing automatic backup solutions and NAS (Network Attached Storage) to protect your precious photos, documents, and digital memories.
-- **Smart Home & Security Cameras:** Expertly setting up and integrating smart devices and IP cameras to enhance your home's convenience and security.
-- **Personalized Tech Lessons:** Patient, one-on-one guidance for seniors and anyone looking to master their devices, ensuring confidence and comfort with technology.
-- **Small Business IT Support:** Providing professional, on-demand IT infrastructure support without the need for in-house staff or corporate overhead.
-
-### Key Features
-- **Modular Architecture:** Refactored for maintainability with separated HTML, CSS, and JS components.
-- **Adaptive Branding:** A fully synchronized SVG design system that seamlessly adapts for dark/light modes and print, ensuring a consistent, professional look.
-- **Performance Driven:** Lightweight HTML5/CSS3 architecture with zero external framework dependencies for sub-second load times.
-- **Responsive Experience:** Seamless transitions from desktop browsers to mobile devices.
-
-## 🎨 Brand Identity
-- **Typography:** Plus Jakarta Sans (Brand), Inter (UI), JetBrains Mono (Technical), Caveat (Signature).
-- **OG Image:** 1200 x 630 pixels.
-- **Color Palette:** 
-  - **Primary Accent:** `#ff8a2a` (International Orange - optimized for Dark Mode)
-  - **Accessible Accent:** `#bf5a00` (Deep Orange - optimized for Light Mode)
-  - **Dark Surface:** `#0e0e0e` (Charcoal)
-  - **Light Surface:** `#fcfaf8` (Snow)
+## What is MeshCon?
+MeshCon is born from the belief that professional tech support should be personal, precise, and—most importantly—convenient. Founded by Bodin Praphanthongchai (Pete), MeshCon brings over 30 years of systems engineering expertise directly to the doorsteps of homes and small businesses across the Chicago area. We specialize in cutting through the jargon to solve the "frustrating" problems: dead WiFi zones, sluggish workstations, and unconfigured smart homes. Our mission is to ensure that your technology serves you, not the other way around, all while keeping your data secure and your devices right where they belong—in your sight.
 
 ## 🛠 Tech Stack
-- **Frontend:** HTML5, CSS3 (Modern Flexbox/Grid), Vanilla JavaScript (ES6+).
-- **Graphics:** Vector XML (SVG).
+
+| Technology | Usage | Badge |
+| :--- | :--- | :--- |
+| **HTML5** | Structural Layout & SEO | ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) |
+| **CSS3** | Modern Grid/Flexbox & Dark Mode | ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) |
+| **JavaScript** | UI Interactivity & Theme Logic | ![JavaScript](https://img.shields.io/badge/javascript-%23F7DF1E.svg?style=for-the-badge&logo=javascript&logoColor=black) |
+| **SVG** | Scalable Adaptive Branding | ![Vector Graphics](https://img.shields.io/badge/SVG-FFB13B.svg?style=for-the-badge&logo=adobeillustrator&logoColor=white) |
 
 ## 📂 Project Structure
-- `MeshCon.html`: The core structural shell and SEO metadata.
-- `styles.css`: The complete design system and responsive layouts.
-- `app.js`: Core interactivity, theme management, and AI integration.
 
-##  Getting Started
+```text
+.
+├── index.html          # Core structural shell and SEO metadata
+├── styles.css          # Design system, variables, and responsive layouts
+├── app.js              # Theme management, modals, and UI logic
+├── blog.html           # Blog index page listing all articles
+├── blog/               # Directory for all technical articles
+│   ├── wifi-evanston.html
+│   ├── arlington-heights.html
+│   ├── wifi7-guide.html
+│   └── ... (10 articles total)
+├── MeshCon-Logo-dark.svg  # Adaptive branding for dark interfaces
+├── MeshCon-Logo-light.svg # Adaptive branding for light interfaces
+├── site.webmanifest    # PWA and browser configuration
+└── README.md           # Project documentation
+```
 
-### Installation
+## 🚀 Getting Started
+
+### Run Locally
+Since MeshCon is a static site with no heavy dependencies, you can run it using any local development server.
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/crazykat8091/meshcon.git
+   ```
+2. **Navigate to the directory:**
+   ```bash
+   cd meshcon
+   ```
+3. **Start a local server:**
+   Using Node.js/NPM (Live Server):
 ```bash
-npm install
+npx serve .
 ```
 
 ### Running Locally
@@ -61,7 +72,7 @@ The server will start at `http://localhost:3000`
 3. Select `main` branch as source
 4. Site will be available at: `https://www.meshcon.tech/`
 
-**Note:** The `<base>` tag in `MeshCon.html` is configured for `/meshcon/`. The Node.js backend (chatbot API) won't work on GitHub Pages static hosting; you'll need a backend service like Vercel for the AI features to function.
+**Note:** The `<base>` tag in `index.html` is configured for `/meshcon/`. The Node.js backend (chatbot API) won't work on GitHub Pages static hosting; you'll need a backend service like Vercel for the AI features to function.
 
 ## 🌐 DNS Configuration (Squarespace)
 To point `www.meshcon.tech` to this repository, you must **first delete all default Squarespace DNS records** (specifically those pointing to `ext-cust.squarespace.com`), then add these:
@@ -84,12 +95,12 @@ If the site is accessible but GitHub still displays an error:
 
 ## 📋 Deployment Checklist
 ### Before Going Live:
-- [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `MeshCon.html` (Search for "tel:" links in Hero and Contact sections)
+- [ ] **Update Phone Number:** Replace `+1 (000) 000-0000` in `index.html` (Search for "tel:" links in Hero and Contact sections)
 - [x] **Update WhatsApp Link:** Integrated `wa.link/ncmjrk`
 - [x] **Configure Formspree:** Integrated with ID `xeedzoqy` and verified testing
   - Sign up at [formspree.io](https://formspree.io)
   - Create a new form and get your form ID
-  - Replace `xeedzoqy` in `MeshCon.html` (Contact Modal form action)
+  - Replace `xeedzoqy` in `index.html` (Contact Modal form action)
   - Test email submissions in contact modal
 - [x] **Add Google Site Verification:** Update `google-site-verification` meta tag
 - [x] **Privacy Contact:** Integrated `whatsapp-qr.png` for secure scanning
@@ -126,4 +137,4 @@ Phone: +1 224-368-9525
 Website: www.meshcon.tech (Your trusted local tech expert)
 
 ---
-*Developed by Bodin Praphanthongchai (Pete) · Version 1.29*
+*Developed by Bodin Praphanthongchai (Pete) · Version 1.52*

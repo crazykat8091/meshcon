@@ -1,5 +1,5 @@
 /**
- * MeshCon v1.29 - Core Application Logic
+ * MeshCon v1.52 - Core Application Logic
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,19 +23,22 @@ document.addEventListener('DOMContentLoaded', () => {
 function initTheme() {
   const html = document.documentElement;
   const btn = document.getElementById('themeToggle');
-  const thumb = document.getElementById('toggleThumb');
   const metaTheme = document.getElementById('metaThemeColor');
   const logoImgs = document.querySelectorAll('.logo-img');
 
   const updateToggle = (theme) => {
     if (metaTheme) metaTheme.setAttribute('content', theme === 'dark' ? '#000000' : '#fcfaf8');
     if (btn) btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light theme' : 'Switch to dark theme');
-    if (thumb) thumb.style.transform = theme === 'dark' ? 'translateX(20px)' : 'translateX(0)';
     
-    // Switch to theme-optimized branding
+    // Switch to theme-optimized branding with path awareness
     logoImgs.forEach(img => {
       if (img) {
-        const newSrc = theme === 'dark' ? 'MeshCon-Logo-dark.svg' : 'MeshCon-Logo-light.svg';
+        const currentSrc = img.getAttribute('src') || '';
+        // Detect if we are in a subdirectory by looking at current src prefix
+        const isSubDir = currentSrc.startsWith('../');
+        const prefix = isSubDir ? '../' : '';
+        
+        const newSrc = theme === 'dark' ? `${prefix}MeshCon-Logo-dark.svg` : `${prefix}MeshCon-Logo-light.svg`;
         if (img.getAttribute('src') !== newSrc) img.src = newSrc;
       }
     });
@@ -97,6 +100,11 @@ function initNavigation() {
     if (mobileNav?.classList.contains('open') && !hamburger?.contains(e.target) && !mobileNav?.contains(e.target)) {
       window.closeMobile();
     }
+  });
+
+  // Handle window resize to clean up mobile state
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 960) window.closeMobile();
   });
 }
 
@@ -274,8 +282,10 @@ function initChat() {
     msg.className = `msg msg-${side}`;
     if (typeof content === 'string') msg.textContent = content;
     else msg.appendChild(content);
-    chatMessages?.appendChild(msg);
-    chatMessages.scrollTop = chatMessages.scrollHeight;
+    if (chatMessages) {
+      chatMessages.appendChild(msg);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
     return msg;
   };
 
